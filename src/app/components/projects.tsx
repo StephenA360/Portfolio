@@ -35,6 +35,13 @@ const projects: Project[]= [
         description: "A class rpg-styled Roblox game where players can fight monsters and get stronger with friends.",
         tools: ["Roblox Studio", "Lua", "Blender"],
         demo: "https://www.roblox.com/games/7960557622/Sword-Game"
+    },
+    {
+        id: "4",
+        name: "Autoclicker",
+        description: "A simple python autoclicker allowing the user to set the clicking speed and position to click.",
+        tools: ["Python"],
+        demo: "https://www.roblox.com/games/7960557622/Sword-Game"
     }
 ]
 
@@ -42,7 +49,7 @@ const projects: Project[]= [
 export function Projects(){
     return(
         <div id="projects">
-            <h1 className="text-4xl text-center p-10">Projects</h1>
+            <h1 className="text-4xl text-center p-10 font-bold">Projects</h1>
             <div className="grid grid-cols-2 gap-y-10 gap-x-0 place-items-center mx-50">
                 
                 {

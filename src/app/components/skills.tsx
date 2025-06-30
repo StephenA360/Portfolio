@@ -1,3 +1,5 @@
+import {SkillCard} from "./skill-card";
+
 const languages: string[] = [
     "Javascript",
     "Java",
@@ -22,42 +24,12 @@ const tools: string[] = [
 export function Skills(){
     return(
         <div id="skills">
-            <h1 className="text-4xl text-center p-10">Skills</h1>
-            <div className="grid grid-cols-3 mx-auto">
-                <div className="mx-auto items-center w-70 h-65 border p-5 rounded-2xl">
-                    <h2 className="text-center">Programming Languages</h2>
-                    <br></br>
-                    <ul className="list-image-none list-inside space-y-2 ml-15">
-                    {
-                        languages.map((language, idx) => (
-                            <li key={idx} className="before:content-['›'] before:mr-2">{language}</li>
-                        ))
-                    }
-                    </ul>
-                </div>
-                <div className="mx-auto items-center w-70 h-65 border p-5 rounded-2xl">
-                    <h2 className="text-center">Frameworks & Libraries</h2>
-                    <br></br>
-                    <ul className="list-image-none list-inside space-y-2 ml-15">
-                    {
-                        frameworks.map((framework, idx) => (
-                            <li key={idx} className="before:content-['›'] before:mr-2">{framework}</li>
-                        ))
-                    }
-                    </ul>
-                </div>
-                <div className="mx-auto items-center w-70 h-65 border p-5 rounded-2xl">
-                    <h2 className="text-center">Tools & Technologies</h2>
-                    <br></br>
-                    <ul className="list-image-none list-inside space-y-2 ml-15">
-                    {
-                        tools.map((tool, idx) => (
-                            <li key={idx} className="before:content-['›'] before:mr-2">{tool}</li>
-                        ))
-                    }
-                    </ul>
-                </div>
+            <h1 className="text-4xl text-center p-10 font-bold">Skills</h1>
+            <div className="grid grid-cols-3 mx-auto mr-30 ml-30">
+                <SkillCard title={"Programming Languages"} examples={languages}/>
+                <SkillCard title={"Frameworks & Libraries"} examples={frameworks}/>
+                <SkillCard title={"Tools and Technologies"} examples={tools}/>
             </div>
-            </div>
+        </div>
     )
 }

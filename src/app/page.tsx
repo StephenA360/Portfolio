@@ -5,6 +5,8 @@ import {Skills} from "./components/skills"
 export default function Home() {
   return(
     <main className="font-sans">
+      <br></br>
+      <br></br>
       <About />
 
       <Skills />

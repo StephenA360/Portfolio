@@ -41,7 +41,14 @@ const projects: Project[]= [
         name: "Autoclicker",
         description: "A simple python autoclicker allowing the user to set the clicking speed and position to click.",
         tools: ["Python"],
-        demo: "https://www.roblox.com/games/7960557622/Sword-Game"
+        github: "https://github.com/StephenA360/Autoclicker"
+    },
+    {
+        id: "5",
+        name: "Blackjack",
+        description: "A text-based version of the card game Blackjack.",
+        tools: ["Python"],
+        github: "https://github.com/StephenA360/Black-Jack"
     }
 ]
 
